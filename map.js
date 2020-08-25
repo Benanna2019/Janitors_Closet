@@ -19,3 +19,4 @@ function addTwo(x) {
 function multiplyTwo(x) {
   return x * 2;
 }
+module.exports = map;
