@@ -1,8 +1,10 @@
-function compose3(fn, fn2, fn3) {
-  return function (x) {
-    return fn(fn2(fn3(x)));
-  };
-}
+const reduce = require("./reduce");
+
+// function compose3(fn, fn2, fn3) {
+//   return function (x) {
+//     return fn(fn2(fn3(x)));
+//   };
+// }
 
 function compose(...fns) {
   return function (x) {

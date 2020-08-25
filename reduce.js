@@ -12,6 +12,6 @@ function reduce(fn, arr, val = 0) {
   return accum;
 }
 
-console.log(reduce((accum, el) => accum + el, array, 50));
+// console.log(reduce((accum, el) => accum + el, array, 50));
 
 module.exports = reduce;
