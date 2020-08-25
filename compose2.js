@@ -3,11 +3,11 @@ const not = require("./not");
 
 function compose2(fn, fn2) {
   return function (x) {
-    return fn2(fn(x));
+    return fn(fn2(x));
   };
 }
 
-let isEven = compose2(isOdd, not);
+let isEven = compose2(not, isOdd);
 
 if (isEven(4)) {
   console.log("Correctly prints even numbers");
