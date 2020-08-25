@@ -1,6 +1,6 @@
 let array = [4, 7, 3, 6, 5, 2, 9, 10, 12];
 
-let filteredArray = array.filter((x) => x % 2 === 0);
+// let filteredArray = array.filter((x) => x % 2 === 0);
 
 // console.log(filteredArray);
 
