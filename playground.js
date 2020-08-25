@@ -17,23 +17,23 @@ function addTwo(a) {
   return a + 2;
 }
 
-let reduceResult = reduce((accum, el) => accum * el, array, 1);
-const reducer = (accum, el) => {
-  if (el < accum) {
-    return el;
-  }
-  return accum;
-};
-let minResult = reduce(reducer, array, array[0]);
+// let reduceResult = reduce((accum, el) => accum * el, array, 1);
+// const reducer = (accum, el) => {
+//   if (el < accum) {
+//     return el;
+//   }
+//   return accum;
+// };
+// let minResult = reduce(reducer, array, array[0]);
+
+// console.log(reduceResult);
+// console.log(minResult);
 
 // let squareAndAddTwo = compose2(addTwo, square);
 // let squareAndAddTwoSquare = compose3(square, addTwo, square);
-// let newCompose = compose(square, square, addTwo, square);
+let newCompose = compose(square, square, addTwo, square);
 // console.log(squareAndAddTwo(20));
-
-console.log(reduceResult);
-console.log(minResult);
 
 // console.log(squareAndAddTwoSquare(2));
 
-// console.log(newCompose(2));
+console.log(newCompose(2));
