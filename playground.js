@@ -1,5 +1,6 @@
 const compose = require("./compose");
 const reduce = require("./reduce");
+const prop = require("./prop");
 
 // function reduce(fn, arr, val = 0) {
 //     let accum = val;
@@ -37,3 +38,10 @@ let newCompose = compose(square, square, addTwo, square);
 // console.log(squareAndAddTwoSquare(2));
 
 console.log(newCompose(2));
+
+const obj2 = {
+  name: "you",
+  age: 77,
+};
+
+console.log(prop("name", obj2));
