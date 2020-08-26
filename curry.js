@@ -38,3 +38,5 @@ function add(a, b, c, d, e, f, g) {
 
 const curryAdd = curry(add);
 console.log(curryAdd(3)(5)(7)(2)(1)(100)(10) === 128);
+
+module.exports = curry;
